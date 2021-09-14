@@ -48,17 +48,30 @@
     }
     &-row {
       display: flex;
+      flex-direction: column;
       justify-content: space-between;
+      @include media-990 {
+        flex-direction: row;
+      }
     }
     &-col {
       &.col-30 {
-        width: 30%;
+        width: 100%;
+        @include media-990 {
+          width: 30%;
+        }
       }
       &.col-40 {
-        width: 40%;
+        width: 100%;
+        @include media-990 {
+          width: 40%;
+        }
       }
       &.col-20 {
-        width: 22%;
+        width: 100%;
+        @include media-990 {
+          width: 22%;
+        }
       }
     }
     &-label {
