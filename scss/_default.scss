@@ -1,0 +1,138 @@
+// colors
+
+$white: #ffffff;
+$black: #000;
+$gray: #7e8287;
+$beige: #f8f3ea;
+$bg-light-blue: #85c1e5;
+$blue: #5584b1;
+$dark-blue: #254e7b;
+
+// end colors
+
+// normalize
+
+body {
+  margin: 0;
+  background-color: $beige;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+$color1: #f4f4f4;
+$color2: #3197ee;
+
+body {
+}
+
+// end normalize
+
+// fonts
+
+* {
+  font-family: "Roboto", sans-serif;
+  color: $black;
+}
+
+// end fonts
+
+// media
+
+$w440: 440px;
+$w580: 580px;
+$w990: 990px;
+$w1024: 1024px;
+$w1200: 1200px;
+$w1440: 1440px;
+$w1600: 1600px;
+
+@mixin media-1600 {
+  @media screen and (min-width: $w1600) {
+    @content;
+  }
+}
+
+@mixin media-440 {
+  @media screen and (min-width: $w440) {
+    @content;
+  }
+}
+
+@mixin media-580 {
+  @media screen and (min-width: $w580) {
+    @content;
+  }
+}
+
+@mixin media-990 {
+  @media screen and (min-width: $w990) {
+    @content;
+  }
+}
+
+@mixin media-1024 {
+  @media screen and (min-width: $w1024) {
+    @content;
+  }
+}
+
+@mixin media-1200 {
+  @media screen and (min-width: $w1200) {
+    @content;
+  }
+}
+
+@mixin media-1400 {
+  @media screen and (min-width: $w1400) {
+    @content;
+  }
+}
+
+// end media
+
+// wrap
+
+.wrapper {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  max-width: 1187px;
+}
+.padding-wrap {
+  padding-left: 16px;
+  padding-right: 16px;
+  @include media-580 {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  @include media-1024 {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+.padding-item {
+  padding: 16px;
+  @include media-580 {
+    padding: 24px;
+  }
+  @include media-1024 {
+    padding: 32px;
+  }
+}
+
+// end wrap

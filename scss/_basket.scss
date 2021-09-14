@@ -1,0 +1,150 @@
+.basket {
+  &__title {
+    margin-top: 20px;
+    margin-bottom: 24px;
+    font-size: 32px;
+    font-weight: 700;
+    text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+    color: $dark-blue;
+  }
+  &__items {
+    background-color: $white;
+    box-shadow: -1px 4px 11px 2px rgba(34, 60, 80, 0.2);
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 32px;
+  }
+  &__add-item {
+    display: none;
+    width: 100%;
+    text-align: center;
+    &-title {
+      margin-bottom: 12px;
+      font-size: 28px;
+      color: $blue;
+    }
+    &-text {
+      font-size: 20px;
+      color: $gray;
+    }
+  }
+  &__item {
+    width: 100%;
+    padding: 16px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid lighten($black, 70%);
+    @include media-990 {
+      padding: 24px;
+      flex-direction: row;
+    }
+    &:last-child {
+      border: none;
+    }
+    &-img {
+      width: 150px;
+      height: 150px;
+      object-fit: contain;
+      margin: 0 auto;
+      @include media-580 {
+        width: 200px;
+        height: 200px;
+      }
+    }
+    &-descr {
+      padding-top: 16px;
+      @include media-440 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      @include media-990 {
+        padding: 0 24px;
+
+        flex-grow: 1;
+      }
+      &-text {
+        width: 40%;
+      }
+    }
+    &-name {
+      margin-bottom: 8px;
+      font-size: 18px;
+    }
+    &-color {
+      margin-bottom: 3px;
+      color: lighten($black, 30%);
+    }
+    &-size {
+      margin-bottom: 12px;
+      color: lighten($black, 30%);
+    }
+    &-values {
+      margin-bottom: 12px;
+      flex-grow: 1;
+      @include media-440 {
+        padding-left: 16px;
+      }
+    }
+    &-value {
+      background-color: darken($white, 1%);
+      border: 1px solid $gray;
+      cursor: pointer;
+      font-size: 18px;
+      line-height: 19px;
+      @include media-440 {
+      }
+      &-num {
+        padding: 0 3px;
+        font-size: 18px;
+        line-height: 19px;
+      }
+    }
+    &-price {
+      font-weight: 700;
+      font-size: 24px;
+    }
+    &-delete {
+      width: 20px;
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      cursor: pointer;
+      @include media-580 {
+        top: 24px;
+        right: 24px;
+      }
+      @include media-990 {
+        top: 32px;
+        right: 32px;
+      }
+    }
+  }
+  &__done {
+    display: none;
+    margin-top: 82px;
+    &-wrap {
+      background-color: $white;
+      box-shadow: -1px 4px 11px 2px rgba(34, 60, 80, 0.2);
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &-img {
+      width: 100%;
+      max-width: 200px;
+    }
+  }
+  &__value {
+    &-text {
+      font-size: 20px;
+    }
+    &-summ {
+      font-size: 20px;
+      font-weight: 700;
+    }
+  }
+}

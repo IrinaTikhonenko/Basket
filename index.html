@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Тестовое задание Tilda</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="./css/main.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+  </head>
+
+  <body>
+    <main class="main">
+      <article class="basket wrapper">
+        <section class="basket__main padding-wrap">
+          <h2 class="basket__title">Корзина</h2>
+          <!-- /.basket__title -->
+
+          <div class="basket__items">
+            <div class="padding-item basket__add-item">
+              <h3 class="basket__add-item-title">Добавьте Товар</h3>
+              <!-- /.basket__add-item-title -->
+              <p class="basket__add-item-text">
+                Ваша корзина пуста.<br />
+                Добавьте товар для&nbsp;продолжения оформления заказа
+              </p>
+              <!-- /.basket__add-item-text -->
+            </div>
+            <!-- /.basket__items-add-item -->
+
+            <div class="padding-item basket__item" data-item="1">
+              <img src="./img/s-l1600-6.jpg" alt="13432" class="basket__item-img" />
+              <!-- /.basket__item-img -->
+
+              <div class="basket__item-descr">
+                <div class="basket__item-descr-text">
+                  <h3 class="basket__item-name">Кожанные кросовки</h3>
+                  <!-- /.basket__item-name -->
+
+                  <p class="basket__item-color">Цвет: <span class="basket__item-color" data-item-color="white">Белый</span></p>
+                  <!-- /.basket__item-color -->
+
+                  <p class="basket__item-size">
+                    Размер:
+                    <span class="basket__item-size" data-item-size="36">36</span>
+                  </p>
+                  <!-- /.basket__item-size -->
+                </div>
+                <!-- /.basket__item-descr-text -->
+
+                <form class="basket__item-values">
+                  <button class="basket__item-value" data-value="minus">-</button>
+                  <span class="basket__item-value-num">1</span>
+                  <button class="basket__item-value" data-value="plus">+</button>
+                </form>
+                <!-- /.basket__item-value -->
+
+                <p class="basket__item-price"><span data-item-price="3200">3 200</span> &#8381;</p>
+                <!-- /.basket__item-price -->
+
+                <img src="./img/del.png" alt="Удалить" class="basket__item-delete" />
+              </div>
+              <!-- /.basket__item-descr -->
+            </div>
+            <!-- /.basket__item -->
+
+            <div class="padding-item basket__item" data-item="2">
+              <img src="./img/2016.jpg" alt="13364" class="basket__item-img" />
+              <!-- /.basket__item-img -->
+
+              <div class="basket__item-descr">
+                <div class="basket__item-descr-text">
+                  <h3 class="basket__item-name">Платье вечернее розовое</h3>
+                  <!-- /.basket__item-name -->
+
+                  <p class="basket__item-color">Цвет: <span class="basket__item-color" data-item-color="pink">Розовый</span></p>
+                  <!-- /.basket__item-color -->
+
+                  <p class="basket__item-size">
+                    Размер:
+                    <span class="basket__item-size" data-item-size="42">42</span>
+                  </p>
+                  <!-- /.basket__item-size -->
+                </div>
+                <!-- /.basket__item-descr-text -->
+
+                <form class="basket__item-values">
+                  <button class="basket__item-value" data-value="minus">-</button>
+                  <span class="basket__item-value-num">1</span>
+                  <button class="basket__item-value" data-value="plus">+</button>
+                </form>
+                <!-- /.basket__item-value -->
+
+                <p class="basket__item-price"><span data-item-price="5780">5 780</span> &#8381;</p>
+                <!-- /.basket__item-price -->
+
+                <img src="./img/del.png" alt="Удалить" class="basket__item-delete" />
+              </div>
+              <!-- /.basket__item-descr -->
+            </div>
+            <!-- /.basket__item -->
+
+            <div class="padding-item basket__item" data-item="3">
+              <img src="./img/2018.jpg" alt="13364" class="basket__item-img" />
+              <!-- /.basket__item-img -->
+
+              <div class="basket__item-descr">
+                <div class="basket__item-descr-text">
+                  <h3 class="basket__item-name">Платье черное</h3>
+                  <!-- /.basket__item-name -->
+
+                  <p class="basket__item-color">Цвет: <span class="basket__item-color" data-item-color="black">Черный</span></p>
+                  <!-- /.basket__item-color -->
+
+                  <p class="basket__item-size">
+                    Размер:
+                    <span class="basket__item-size" data-item-size="44">44</span>
+                  </p>
+                  <!-- /.basket__item-size -->
+                </div>
+                <!-- /.basket__item-descr-text -->
+
+                <form class="basket__item-values">
+                  <button class="basket__item-value" data-value="minus">-</button>
+                  <span class="basket__item-value-num">1</span>
+                  <button class="basket__item-value" data-value="plus">+</button>
+                </form>
+                <!-- /.basket__item-value -->
+
+                <p class="basket__item-price"><span data-item-price="2320">2 320</span> &#8381;</p>
+                <!-- /.basket__item-price -->
+
+                <img src="./img/del.png" alt="Удалить" class="basket__item-delete" />
+              </div>
+              <!-- /.basket__item-descr -->
+            </div>
+            <!-- /.basket__item -->
+
+            <div class="basket__value padding-item">
+              <p class="basket__value-text">Итоговая стоимость: <span class="basket__value-summ">1</span> <b>&#8381;</b></p>
+              <!-- /.basket__value-text -->
+            </div>
+            <!-- /.basket__value -->
+          </div>
+          <!-- /.basket__items -->
+
+          <div class="basket__button-wrap">
+            <button type="button" id="1" class="basket__button-next">Продолжить оформление</button>
+            <!-- /.basket__button-next -->
+          </div>
+          <!-- /.basket__button-wrap -->
+        </section>
+        <!-- /.basket__main -->
+
+        <section class="basket__registration padding-wrap">
+          <h2 class="basket__title">Оформление заказа</h2>
+          <!-- /.basket__title -->
+          <form action="#" class="padding-item basket__form">
+            <div class="basket__form-wrap">
+              <div class="basket__form-row">
+                <div class="basket__form-col col-40">
+                  <label for="name" class="basket__form-label">Имя и Фамилия</label>
+                  <input type="text" name="input-name" id="name" class="basket__form-input basket__form-name" placeholder="Иван Иванов" />
+                  <!-- /.basket__form-name-->
+                </div>
+                <!-- /.basket__form-col -->
+
+                <div class="basket__form-col col-20">
+                  <label for="phone" class="basket__form-label">Телефон</label>
+                  <input type="tel" name="input-tel" id="phone" class="basket__form-input basket__form-phone" maxlength="50" required="required" placeholder="+79995557755" />
+                  <!-- /.basket__form-phone-->
+                </div>
+                <!-- /.basket__form-col -->
+
+                <div class="basket__form-col col-30">
+                  <label for="email" class="basket__form-label">E-mail</label>
+                  <input type="email" name="input-email" id="email" class="basket__form-input basket__form-email" placeholder="login@mail.ru" />
+                  <!-- /.basket__form-email-->
+                </div>
+                <!-- /.basket__form-col -->
+              </div>
+              <!-- /.basket__form-row -->
+
+              <p class="basket__form-text">Выбери способ доставки:</p>
+              <!-- /.basket__form-text -->
+              <div class="basket__form-delivery">
+                <input type="radio" name="courier" id="delivery-courier" class="basket__form-radio" />
+                <label for="delivery-courier" class="basket__form-label radio-label delivery">Доставка курьером</label>
+                <!-- /.basket__form-label -->
+              </div>
+              <!-- /.basket__form-delivery -->
+
+              <div class="basket__form-adress">
+                <div class="basket__form-adress-row">
+                  <div class="basket__form-adress-col col-40">
+                    <label for="town" class="basket__form-label">Город</label>
+                    <input type="text" name="town" id="" class="basket__form-input basket__form-town" placeholder="Укажите город" />
+                    <!-- /.basket__form-town -->
+                  </div>
+                  <!-- /.basket__form-adress-col -->
+                  <div class="basket__form-adress-col col-60">
+                    <label for="street" class="basket__form-label">Улица</label>
+                    <input type="text" name="street" id="" class="basket__form-input basket__form-street" placeholder="Укажите улицу" />
+                    <!-- /.basket__form-street -->
+                  </div>
+                  <!-- /.basket__form-adress-col -->
+                </div>
+                <!-- /.basket__form-adress-row -->
+
+                <div class="basket__form-adress-row">
+                  <div class="basket__form-adress-col col-30">
+                    <label for="house" class="basket__form-label">Дом</label>
+                    <input type="text" name="house" id="" class="basket__form-input basket__form-house" placeholder="Укажите дом" />
+                    <!-- /.basket__form-house -->
+                  </div>
+                  <!-- /.basket__form-adress-col -->
+                  <div class="basket__form-adress-col col-30">
+                    <label for="building" class="basket__form-label">Корпус</label>
+                    <input type="text" name="building" id="" class="basket__form-input basket__form-building" placeholder="Укажите корпус" />
+                    <!-- /.basket__form-building -->
+                  </div>
+                  <!-- /.basket__form-adress-col -->
+                  <div class="basket__form-adress-col col-30">
+                    <label for="apartment" class="basket__form-label">Квартира</label>
+                    <input type="text" name="apartment" id="" class="basket__form-input basket__form-apartment" placeholder="Укажите квартиру" />
+                    <!-- /.basket__form-apartment -->
+                  </div>
+                  <!-- /.basket__form-adress-col -->
+                </div>
+                <!-- /.basket__form-adress-coll -->
+
+                <label for="comments" class="basket__form-label">Комментарии к адресу</label>
+                <textarea
+                  name="comments"
+                  id="delivery-comments"
+                  cols="10"
+                  rows="1"
+                  class="basket__form-input basket__form-comments"
+                  placeholder="подъезд, этаж, домофон и другая информация"
+                ></textarea>
+                <!-- /.basket__form-comments -->
+              </div>
+              <!-- /.basket__form-adress -->
+
+              <div class="basket__form-delivery">
+                <input type="radio" name="pickup" id="delivery-pickup" class="basket__form-radio" />
+                <label for="delivery-pickup" class="basket__form-label radio-label delivery">Самовывоз из магазина</label>
+                <!-- /.basket__form-label -->
+              </div>
+              <!-- /.basket__form-delivery -->
+
+              <div class="basket__form-shops">
+                <label for="shop" class="basket__form-label">Выбери магазин</label>
+                <select name="shop" id="delivery-shop" class="basket__form-input basket__form-select">
+                  <option value="" class="basket__form-select-item">Москва, ул Пудовкина, д 13</option>
+                  <!-- /.basket__form-select-item -->
+                  <option value="" class="basket__form-select-item">Москва, Проспект Ленина, д 22 к 3</option>
+                  <!-- /.basket__form-select-item -->
+                  <option value="" class="basket__form-select-item">Москва, Кутузовский проспект, д 4</option>
+                  <!-- /.basket__form-select-item -->
+                </select>
+                <!-- /.basket__form-select -->
+              </div>
+              <!-- /.basket__form-shops -->
+
+              <p class="basket__form-text">Выбери способ оплаты:</p>
+              <!-- /.basket__form-text -->
+              <div class="basket__form-payment">
+                <div class="basket__form-payment-row">
+                  <input type="radio" name="cash" id="payment-cash" class="basket__form-radio" />
+                  <label for="payment-cash" class="basket__form-label radio-label payment">Наличные при получении</label>
+                  <!-- /.basket__form-label -->
+                </div>
+                <!-- /.basket__form-payment-row -->
+                <div class="basket__form-payment-row">
+                  <input type="radio" name="card" id="payment-card" class="basket__form-radio" />
+                  <label for="payment-card" class="basket__form-label radio-label payment">Банковской картой</label>
+                  <!-- /.basket__form-label -->
+                </div>
+                <!-- /.basket__form-payment-row -->
+              </div>
+              <!-- /.basket__form-payment -->
+
+              <div class="basket__button-wrap">
+                <button type="submit" class="basket__button-submit">Завершить оформление заказа</button>
+                <!-- /.basket__button-next -->
+              </div>
+              <!-- /.basket__button-wrap -->
+            </div>
+            <!-- /.basket__form-wrap -->
+          </form>
+          <!-- /.basket__form -->
+        </section>
+        <!-- /.basket__registration -->
+
+        <section class="basket__done padding-wrap">
+          <div class="basket__done-wrap padding-item">
+            <img src="./img/pngegg.png" alt="1" class="basket__done-img" />
+          </div>
+          <!-- /.basket__done-wrap -->
+        </section>
+        <!-- /.basket__done -->
+      </article>
+      <!-- /.basket -->
+    </main>
+  </body>
+</html>
